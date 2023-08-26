@@ -13,6 +13,8 @@ const UserReducer = (state = initialStateCustomer, action) => {
         nationalID: action.payload.nationalID,
         createdAt: action.payload.createdAt,
       };
+    case "customer/updateName":
+      return { ...state, fullName: action.payload };
     default:
       return state;
   }
