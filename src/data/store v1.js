@@ -88,8 +88,6 @@ store.dispatch(deposit(1000));
 store.dispatch(requestLoan(1000, "Bua a Phone"));
 store.dispatch(payLoan(1000));
 
-console.log(store.getState());
-
 function createCustomer(fullName, nationalID) {
   return {
     type: "customer/createCustomer",
@@ -102,5 +100,3 @@ const updateName = (fullName) => {
 };
 
 store.dispatch(createCustomer("kouhsik", "123123"));
-
-console.log(store.getState());

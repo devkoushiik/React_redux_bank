@@ -39,8 +39,6 @@ function AccountOperations() {
     setPayUserLoan("");
   }
 
-  console.log(typeof withdrawalAmount);
-
   return (
     <div>
       <h2>Your account operations</h2>
